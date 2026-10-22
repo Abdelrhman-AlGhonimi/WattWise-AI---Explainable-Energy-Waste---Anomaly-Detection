@@ -1,0 +1,9 @@
+flowchart LR
+  UCI[UCI official archive] --> Raw[Immutable raw CSV]
+  Raw --> V[Schema validation]
+  V --> C[Cleaning report]
+  C --> F[Past-only feature engineering]
+  F --> Split[Chronological train validation test]
+  Split --> Train[Training and tuning]
+  Train --> Eval[Validation selection and final test]
+  Eval --> Art[Versioned model and metric artifacts]

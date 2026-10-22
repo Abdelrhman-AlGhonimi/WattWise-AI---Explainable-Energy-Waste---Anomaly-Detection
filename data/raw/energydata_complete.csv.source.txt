@@ -1,0 +1,1 @@
+Source: https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip\nAcquisition recorded UTC: 2026-10-22T21:28:03.671030+00:00\nDataset page: https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction\n

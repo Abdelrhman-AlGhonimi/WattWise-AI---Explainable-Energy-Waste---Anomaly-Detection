@@ -1,0 +1,8 @@
+flowchart LR
+  X[Past observations at t] --> B[Persistence and regression baselines]
+  X --> I[Tree and boosting models]
+  I --> O[Optuna temporal CV]
+  B --> V[Validation comparison]
+  O --> V
+  V --> E[Voting and walk-forward stack]
+  E --> F[Forecast Appliances at t+10m]

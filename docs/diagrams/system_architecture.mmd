@@ -1,0 +1,8 @@
+flowchart LR
+  U[User] --> S[Streamlit application]
+  S --> I[Inference and analysis services]
+  I --> M[Forecast models]
+  I --> A[Residual and Isolation Forest detectors]
+  M --> R[Artifacts and reports]
+  A --> R
+  R --> S

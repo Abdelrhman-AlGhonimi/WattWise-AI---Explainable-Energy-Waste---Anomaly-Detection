@@ -1,0 +1,10 @@
+flowchart TD
+  A[Collection] --> B[EDA]
+  B --> C[Preprocessing]
+  C --> D[Feature engineering]
+  D --> E[Temporal split]
+  E --> F[Training and temporal CV]
+  F --> G[Validation selection]
+  G --> H[Isolated test]
+  H --> I[Inference and human review]
+  I --> J[Monitoring considerations: drift, residuals, recalibration]

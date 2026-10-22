@@ -1,0 +1,8 @@
+flowchart LR
+  P[Forecast at t+10m] --> R[Observed minus expected residual]
+  R --> Q[Validation-calibrated absolute residual threshold]
+  P --> IF[Isolation Forest on historical feature vectors]
+  Q --> Flag[Candidate event]
+  IF --> Flag
+  Flag --> X[Feature attribution and context]
+  X --> H[Human interpretation; no verified waste label]
